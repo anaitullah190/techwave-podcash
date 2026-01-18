@@ -11,11 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-[#1A0B2E] text-white inter">
     <!-- HEADER -->
-    <header></header>
+    <header class="flex items-center justify-between max-w-7xl mx-auto py-4">
+      <img class="h-8" src="./assets/logo.png" alt="" />
+      <nav>
+        <ul class="flex gap-4 text-xl">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Episodes</a></li>
+          <li><a href="#">Host</a></li>
+        </ul>
+      </nav>
+      <button
+        class="bg-linear-to-tr from-[#ffc60c] to-purple-500 px-8 py-4 text-white text-xl rounded-4xl"
+      >
+        Subscribe <i class="fa-solid fa-right-long"></i>
+      </button>
+    </header>
     <!-- HERO -->
     <section></section>
     <!-- STATS -->
@@ -27,6 +48,17 @@
     <!-- HOST -->
     <section></section>
     <!-- FOOTER -->
-    <footer></footer>
+    <footer class="bg-[url('./assets/footer-bg.png')] bg-center flex flex-col items-center space-y-4 py-16">
+      <div>
+        <img class="h-8 mb-5" src="./assets/logo.png" alt="" />
+      </div>
+        <ul class="flex items-center gap-6">
+          <li class="flex gap-2"><img src="./assets/spotify.png" alt="" /> Sportify</li>
+          <li class="flex gap-2"><img src="./assets/apple-podcast.png" alt="" /> Apple Podcast</li>
+          <li class="flex gap-2"><img src="./assets/youtube.png" alt="" /> Youtube</li>
+          <li class="flex gap-2"><img src="./assets/twitter.png" alt="" /> Twitter</li>
+        </ul>
+        <p class="text-[#FAFAFA]">© 2026 TechWave Podcast. All rights reserved.</p>
+    </footer>
   </body>
 </html>
