@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave Podcash</title>
+    <link rel="shortcut icon" href="./assets/resource.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,8 +24,9 @@
   <body class="bg-[#1A0B2E] text-white inter">
     <!-- HEADER -->
     <header class="flex items-center justify-between max-w-7xl mx-auto py-4">
-      <img class="h-8" src="./assets/logo.png" alt="" />
-      <nav>
+      <img class="h-4 md:h-8" src="./assets/logo.png" alt="" />
+      <img class="block md:hidden" src="./assets/hamburger-menu.png" alt="">
+      <nav class="hidden md:block">
         <ul class="flex gap-4 text-xl">
           <li><a href="#">About</a></li>
           <li><a href="#">Episodes</a></li>
@@ -32,16 +34,16 @@
         </ul>
       </nav>
       <button
-        class="bg-linear-to-tr from-[#ffc60c] to-purple-500 px-8 py-4 text-white text-xl rounded-4xl"
+        class="hidden md:block bg-linear-to-tr from-[#ffc60c] to-purple-500 px-8 py-4 text-white text-xl rounded-4xl"
       >
         Subscribe <i class="fa-solid fa-right-long"></i>
       </button>
     </header>
     <!-- HERO -->
     <section
-      class="relative bg-[url('./assets/hero-bg.png')] bg-center bg-no-repeat bg-cover"
+      class="relative bg-[url('./assets/hero-bg.png')] md:bg-center bg-no-repeat bg-contain md:bg-cover"
     >
-      <div class="mx-auto max-w-6xl px-4 pt-24 pb-20">
+      <div class="mx-auto max-w-6xl px-4 mt-9 md:pt-24 pb-20">
         <div class="relative flex justify-center">
           <div
             class="relative h-80 w-[320px] sm:h-[360px] sm:w-[360px] md:h-[420px] md:w-[420px]"
@@ -49,21 +51,21 @@
             <img
               src="./assets/hero-circle.png"
               alt=""
-              class="absolute inset-0 h-full w-full object-contain"
+              class="absolute inset-0 h-[50%] md:h-full w-full object-contain"
             />
             <span
-              class="absolute right-[22px] top-[42px] rounded-full bg-[#00FF88] px-4 py-2 text-xs font-bold text-black shadow-lg"
+              class="absolute right-[60px] md:right-[22px] md:top-[42px] rounded-full bg-[#00FF88] px-4 py-2 text-xs font-bold text-black shadow-lg"
             >
               NEW
             </span>
             <img
               src="./assets/microphone.png"
               alt=""
-              class="absolute left-1/2 top-1/2 w-[120px] -translate-x-1/2 -translate-y-1/2 sm:w-[135px] md:w-[150px]"
+              class="absolute left-40 md:left-1/2 top-20 md:top-1/2 w-[60px] -translate-x-1/2 -translate-y-1/2 sm:w-[135px] md:w-[150px]"
             />
           </div>
         </div>
-        <div class="mt-10 flex flex-col items-center text-center">
+        <div class=" mt-[-120px] md:mt-10 flex flex-col items-center text-center">
           <h2 class="text-4xl font-extrabold tracking-tight sm:text-5xl">
             TechWave
           </h2>
@@ -74,13 +76,13 @@
 
           <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
             <button
-              class="flex items-center gap-2 rounded-full bg-linear-to-r from-[#ffc60c] to-[#a855f7] px-8 py-3 text-sm font-semibold text-white shadow-md"
+              class="flex items-center gap-2 rounded-full bg-linear-to-r from-[#ffc60c] to-[#a855f7] px-4 sm:px-8 py-2 sm:py-3 text-sm font-semibold text-white shadow-md"
             >
               <img class="h-4 w-4" src="./assets/spotify.png" alt="" />
               Listen On Spotify
             </button>
             <button
-              class="flex items-center gap-2 rounded-full border border-[#00FF88] px-8 py-3 text-sm font-semibold text-[#00FF88]"
+              class="flex items-center gap-2 rounded-full border border-[#00FF88] px-4 sm:px-8 py-2 sm:py-3 text-sm font-semibold text-[#00FF88]"
             >
               <img class="h-4 w-4" src="./assets/message.png" alt="" />
               Subscribe
