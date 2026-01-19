@@ -93,16 +93,16 @@
     </section>
 
     <!-- STATS -->
-    <section class="max-w-7xl mx-auto px-6 py-12 text-center">
+    <section class="max-w-7xl mx-auto sm:px-6 sm:py-12 text-center">
       <div>
-        <h2 class="text-3xl font-bold text-center mb-12">About The Podcast</h2>
-        <p class="w-7/12 mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-6 sm:mb-12">About The Podcast</h2>
+        <p class="sm:w-7/12 mx-auto">
           TechWave is your go-to podcast for staying ahead in the fast-paced
           world of technology. We break down complex topics into digestible
           insights, explore productivity strategies that actually work, and
           share stories of personal growth from industry leaders.
         </p>
-        <p class="mt-9">
+        <p class=" mt-5 sm:mt-9">
           Join thousands of young professionals and tech enthusiasts who start
           their day with TechWave.
         </p>
@@ -130,10 +130,10 @@
       </div>
     </section>
     <!-- WHY CHOOSE -->
-    <section class="max-w-7xl mx-auto px-6 py-20">
-      <h2 class="text-3xl font-bold text-center mb-12">Why Choose TechWave</h2>
+    <section class="max-w-7xl mx-auto px-6 py-12 sm:py-20">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Why Choose TechWave</h2>
 
-      <div class="grid md:grid-cols-3 gap-4">
+      <div class="md:grid md:grid-cols-3 md:gap-4 space-y-4 md:space-y-0">
         <div class="bg-[#351165] col-span-1 row-span-2 p-6 rounded-xl">
           <img src="./assets/headphone.png" alt="" />
           <h4 class="font-semibold text-lg mb-2">Premium Audio Quality</h4>
@@ -262,18 +262,18 @@
     <!-- HOST -->
     <section class="max-w-7xl mx-auto gap-10 mb-16">
       <h2 class="text-3xl font-bold text-center mb-12">Meet the Host</h2>
-      <div class="flex gap-5 bg-[#2a0d4e] p-6 rounded-2xl">
+      <div class="flex flex-col md:flex-row items-center gap-5 bg-[#2a0d4e] p-6 rounded-2xl">
         <img src="./assets/host.png" alt="" />
         <div>
-          <h3 class="mb-3 text-2xl font-bold">Alex Kumar</h3>
-          <p class="mb-2">
+          <h3 class="mb-3 text-2xl text-center md:text-start font-bold">Alex Kumar</h3>
+          <p class="mb-2 text-center md:text-start">
             Tech entrepreneur, productivity expert, and lifelong learner. Alex
             has been in the tech industry for over 10 years, working with
             startups and Fortune 500 companies. Through TechWave, Alex shares
             insights from industry leaders and practical advice for anyone
             looking to grow in tech.
           </p>
-          <ul class="flex items-center gap-4">
+          <ul class="flex items-center justify-center md:justify-start gap-4">
             <li class="border p-2 rounded-4xl">
               <img src="./assets/linkedin.png" alt="" />
             </li>
@@ -292,12 +292,12 @@
     </section>
     <!-- FOOTER -->
     <footer
-      class="bg-[url('./assets/footer-bg.png')] bg-center flex flex-col items-center space-y-4 py-16"
+      class="bg-[url('./assets/footer-bg.png')] bg-center flex flex-col items-center space-y-4 py-16 px-6 sm:px-0"
     >
       <div>
         <img class="h-8 mb-5" src="./assets/logo.png" alt="" />
       </div>
-      <ul class="flex items-center gap-6">
+      <ul class="flex flex-wrap justify-center items-center gap-6">
         <li class="flex gap-2">
           <img src="./assets/spotify.png" alt="" /> Sportify
         </li>
@@ -311,7 +311,7 @@
           <img src="./assets/twitter.png" alt="" /> Twitter
         </li>
       </ul>
-      <p class="text-[#FAFAFA]">
+      <p class="text-[#FAFAFA] text-[12px] sm:text-sm">
         © 2026 TechWave Podcast. All rights reserved.
       </p>
     </footer>
